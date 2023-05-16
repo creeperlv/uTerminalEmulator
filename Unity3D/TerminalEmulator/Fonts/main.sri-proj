@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BuildConfigurations>
+    <BuildConfiguration>
+      <Name>Sasarsa Mono CL</Name>
+      <OutputDirectory>../Assets/TEAssets/Fonts/SarasaMonoCL</OutputDirectory>
+      <Symbols>
+        <Symbol>
+          <Name>DEBUG</Name>
+          <Value>true</Value>
+        </Symbol>
+      </Symbols>
+      <BuildTargets>
+        <BuildTarget>
+          <Name>CharSet-000</Name>
+          <File>Sarasa Mono CL/CharSet-000.sri</File>
+          <OutputName>CharSet-000.png</OutputName>
+          <Background>Black</Background>
+          <Foreground>White</Foreground>
+          <Width>320</Width>
+          <Height>320</Height>
+          <Symbols />
+        </BuildTarget>
+      </BuildTargets>
+    </BuildConfiguration>
+  </BuildConfigurations>
+</Project>
