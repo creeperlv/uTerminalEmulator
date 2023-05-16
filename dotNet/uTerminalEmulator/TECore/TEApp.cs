@@ -54,10 +54,8 @@ namespace TerminalEmulator
                                     {
                                         case 3:
                                             {
-                                                //Debug.Log("Del?");
                                                 if (InputPos < InputLen)
                                                 {
-                                                    //Debug.Log("Del!");
                                                     input = input.Remove(InputPos , 1);
                                                     InputLen--;
                                                     Write($"\x1b[C");

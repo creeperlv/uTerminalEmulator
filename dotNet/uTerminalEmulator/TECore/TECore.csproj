@@ -3,7 +3,16 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Version>$(VersionPrefix)0.1.1.0</Version>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Authors>Creeper Lv</Authors>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="LibCLCC.NET" Version="1.7.8" />

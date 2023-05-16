@@ -15,14 +15,14 @@ namespace TerminalEmulator
         public override void Init(TECore core)
         {
             base.Init(core);
-            CurrentDirectory = Environment.CurrentDirectory;
+            __cd = Environment.CurrentDirectory;
             WriteLine("esh, Example SHell");
             WritePrompt();
         }
-        public string CurrentDirectory;
+        public string __cd;
         public void WritePrompt()
         {
-            Write(CurrentDirectory + " $");
+            Write(__cd + " $");
         }
         public override void OnGetLine(string s)
         {
@@ -31,7 +31,7 @@ namespace TerminalEmulator
             {
                 case "ls":
                     {
-                        DirectoryInfo directoryInfo = new DirectoryInfo(CurrentDirectory);
+                        DirectoryInfo directoryInfo = new DirectoryInfo(__cd);
                         var dirs = directoryInfo.EnumerateDirectories();
                         foreach (var item in dirs)
                         {
@@ -62,19 +62,20 @@ namespace TerminalEmulator
                 case "cd":
                     {
                         var arg1 = seg.Next.content;
-                        if (Directory.Exists(arg1))
+                        var p = Path.Combine(__cd , arg1);
+                        if (Directory.Exists(p))
                         {
-                            DirectoryInfo directoryInfo = new DirectoryInfo(arg1);
-                            CurrentDirectory = directoryInfo.FullName;
 
+                            DirectoryInfo directoryInfo = new DirectoryInfo(p);
+                            __cd = directoryInfo.FullName;
                         }
                         else
                         {
-                            var p = Path.Combine(CurrentDirectory , arg1);
-                            if (Directory.Exists(p))
+                            if (Directory.Exists(arg1))
                             {
-                                DirectoryInfo directoryInfo = new DirectoryInfo(p);
-                                CurrentDirectory = directoryInfo.FullName;
+                                DirectoryInfo absDir = new DirectoryInfo(arg1);
+                                __cd = absDir.FullName;
+
                             }
                             else
                             {
