@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ef278fc37c144488db5b0b426387c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentDirectory: 
+  __cd: 
 --- !u!4 &23659997
 Transform:
   m_ObjectHideFlags: 0
@@ -897,8 +897,8 @@ MonoBehaviour:
   m_Script: {fileID: 522402782, guid: 9764a721c88256e48ba27e35504ac358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Width: 80
-  Height: 24
+  Width: 85
+  Height: 26
   CW: 10
   CH: 20
   TGW: 20
@@ -915,7 +915,7 @@ MonoBehaviour:
   textureApplier:
   - {fileID: 1227005501}
   - {fileID: 750010658}
-  TextureName: 
+  BufferUpdatePerFrame: 2
   FG: 9
   DefaultFG: 9
   Blink: 0.5
@@ -938,6 +938,8 @@ MonoBehaviour:
     - Key: 0
       Value: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
   PreattachedApp: {fileID: 23659996}
+  PauseKeyboardInput: 0
+  PauseCursorUpdate: 0
   CurrentPosition: {x: 0, y: 0}
 --- !u!114 &1174103875
 MonoBehaviour:

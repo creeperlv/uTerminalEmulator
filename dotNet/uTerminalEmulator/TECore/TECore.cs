@@ -36,7 +36,7 @@ namespace TerminalEmulator
         public Texture2D TEBuffer;
         [Header("Helper of applying the texture")]
         public List<TextureApplier> textureApplier;
-        public string TextureName;
+        public int BufferUpdatePerFrame=10;
         public int FG;
         public int DefaultFG;
         public float Blink;
@@ -49,6 +49,8 @@ namespace TerminalEmulator
         public KVDict<int , Color> FGColorPlatte;
         public KVDict<int , Color> BGColorPlatte;
         public TEApp PreattachedApp;
+        public bool PauseKeyboardInput = true;
+        public bool PauseCursorUpdate=true;
         Sprite SBuffer;
         Queue<string> Commits = new Queue<string>();
         // Start is called before the first frame update
@@ -101,7 +103,7 @@ namespace TerminalEmulator
             while (WillListen)
             {
                 yield return null;
-                for (int i = 0 ; i < 10 ; i++)
+                for (int i = 0 ; i < BufferUpdatePerFrame ; i++)
                 {
                     if (Commits.Count > 0)
                     {
@@ -239,6 +241,8 @@ namespace TerminalEmulator
                         Buffer [ x , Height - 1 ] = ' ';
                         Redraw(x , Height - 1);
                     }
+                    LastCP.y -= 1;
+                    if(LastCP.y < 0 )LastCP.y = 0;
                     CurrentPosition.y -= 1;
                 }
             }
@@ -645,6 +649,18 @@ namespace TerminalEmulator
         bool Shift;
         public void Update()
         {
+            if (!PauseCursorUpdate)
+            {
+            BlinkD += Time.deltaTime;
+            if (BlinkD > Blink)
+            {
+                ShowCursor = !ShowCursor;
+                BlinkD = 0;
+            }
+            DrawCursor();
+
+            }
+            if (PauseKeyboardInput) return;
             var str = Input.inputString;
             foreach (var item in str)
             {
@@ -710,13 +726,6 @@ namespace TerminalEmulator
             {
                 host.OnObtainChar('\t');
             }
-            BlinkD += Time.deltaTime;
-            if (BlinkD > Blink)
-            {
-                ShowCursor = !ShowCursor;
-                BlinkD = 0;
-            }
-            DrawCursor();
             return;
         }
     }

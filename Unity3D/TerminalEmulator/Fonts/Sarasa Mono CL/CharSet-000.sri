@@ -3,12 +3,45 @@
 		<Rectangle X="-1" Y="-1" Width="66" Height="66" Size="0" Fill="True" Color="Black"/>
 		<SetSymbol Name="s" Value="0.5" />
 		<SetSymbol Name="f" Value="Sarasa Mono CL" />
+		<SetSymbol Name="sharp" Value="#" />
+		<SetSymbol Name="x" Value="0" />
+		<SetSymbol Name="y" Value="1" />
+		<Text Content="&#16;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="1" />
+		<Text Content="&#17;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="2" />
+		<Text Content="&#18;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="3" />
+		<Text Content="&#19;sharp" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="4" />
+		<Text Content="&#20;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="5" />
+		<Text Content="&#21;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="6" />
+		<Text Content="&#22;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="7" />
+		<Text Content="&#23;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="8" />
+		<Text Content="&#24;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="9" />
+		<Text Content="&#25;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="10" />
+		<Text Content="&#26;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="11" />
+		<Text Content="&#27;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="12" />
+		<Text Content="&#28;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="13" />
+		<Text Content="&#29;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="14" />
+		<Text Content="&#30;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="15" />
+		<Text Content="&#31;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="0" />
 		<SetSymbol Name="y" Value="2" />
-		<SetSymbol Name="sharp" Value="#" />
-		<Text Content=" " FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#32;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="1" />
-		<Text Content="!" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#33;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="2" />
 		<Text Content="&#34;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="3" />
@@ -202,17 +235,83 @@
 		<Text Content="&#126;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="15" />
 		<Text Content="&#127;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="y" Value="8" />
+		<SetSymbol Name="x" Value="0" />
+		<Text Content="&#128;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="1" />
+		<Text Content="&#129;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="2" />
+		<Text Content="&#130;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="3" />
+		<Text Content="&#131;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="4" />
+		<Text Content="&#132;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="5" />
+		<Text Content="&#133;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="6" />
+		<Text Content="&#134;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="7" />
+		<Text Content="&#135;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="8" />
+		<Text Content="&#136;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="9" />
+		<Text Content="&#137;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="10" />
+		<Text Content="&#138;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="11" />
+		<Text Content="&#139;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="12" />
+		<Text Content="&#140;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="13" />
+		<Text Content="&#141;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="14" />
+		<Text Content="&#142;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="15" />
+		<Text Content="&#143;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="y" Value="9" />
+		<SetSymbol Name="x" Value="0" />
+		<Text Content="&#148;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="1" />
+		<Text Content="&#145;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="2" />
+		<Text Content="&#146;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="3" />
+		<Text Content="&#147;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="4" />
+		<Text Content="&#148;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="5" />
+		<Text Content="&#149;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="6" />
+		<Text Content="&#150;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="7" />
+		<Text Content="&#151;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="8" />
+		<Text Content="&#152;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="9" />
+		<Text Content="&#153;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="10" />
+		<Text Content="&#154;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="11" />
+		<Text Content="&#155;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="12" />
+		<Text Content="&#156;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="13" />
+		<Text Content="&#157;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="14" />
+		<Text Content="&#158;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="15" />
+		<Text Content="&#159;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="y" Value="10" />
 		<SetSymbol Name="x" Value="0" />
-		<Text Content="&#161;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#160;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="1" />
-		<Text Content="&#162;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#161;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="2" />
-		<Text Content="&#163;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#162;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="3" />
-		<Text Content="&#164;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#163;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="4" />
-		<Text Content="&#165;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<Text Content="&#164;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="5" />
 		<Text Content="&#165;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="6" />
@@ -301,5 +400,104 @@
 		<Text Content="&#206;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 		<SetSymbol Name="x" Value="15" />
 		<Text Content="&#207;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="y" Value="13" />
+		<SetSymbol Name="x" Value="0" />
+		<Text Content="&#208;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="1" />
+		<Text Content="&#209;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="2" />
+		<Text Content="&#210;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="3" />
+		<Text Content="&#220;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="4" />
+		<Text Content="&#221;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="5" />
+		<Text Content="&#222;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="6" />
+		<Text Content="&#223;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="7" />
+		<Text Content="&#224;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="8" />
+		<Text Content="&#225;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="9" />
+		<Text Content="&#226;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="10" />
+		<Text Content="&#227;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="11" />
+		<Text Content="&#228;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="12" />
+		<Text Content="&#229;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="13" />
+		<Text Content="&#230;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="14" />
+		<Text Content="&#231;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="15" />
+		<Text Content="&#232;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="y" Value="14" />
+		<SetSymbol Name="x" Value="0" />
+		<Text Content="&#233;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="1" />
+		<Text Content="&#234;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="2" />
+		<Text Content="&#235;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="3" />
+		<Text Content="&#236;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="4" />
+		<Text Content="&#237;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="5" />
+		<Text Content="&#238;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="6" />
+		<Text Content="&#239;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="7" />
+		<Text Content="&#240;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="8" />
+		<Text Content="&#241;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="9" />
+		<Text Content="&#242;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="10" />
+		<Text Content="&#243;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="11" />
+		<Text Content="&#244;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="12" />
+		<Text Content="&#245;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="13" />
+		<Text Content="&#246;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="14" />
+		<Text Content="&#247;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="15" />
+		<Text Content="&#249;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="y" Value="15" />
+		<SetSymbol Name="x" Value="0" />
+		<Text Content="&#250;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="1" />
+		<Text Content="&#251;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="2" />
+		<Text Content="&#252;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="3" />
+		<Text Content="&#253;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="4" />
+		<Text Content="&#254;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="5" />
+		<Text Content="&#255;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="6" />
+		<Text Content="&#256;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="7" />
+		<Text Content="&#257;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="8" />
+		<Text Content="&#258;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="9" />
+		<Text Content="&#259;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="10" />
+		<Text Content="&#260;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="11" />
+		<Text Content="&#261;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="12" />
+		<Text Content="&#262;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="13" />
+		<Text Content="&#263;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="14" />
+		<Text Content="&#264;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
+		<SetSymbol Name="x" Value="15" />
+		<Text Content="&#265;" FontFamily="#f" FontStyle="Regular" Size="s" X="x" Y="y" Width="1" Height="1" Align="Near" VerticalAlign="Near" Color="White" />
 	</ImageNodeRoot>
 </ScalableRelativeImage>
