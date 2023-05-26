@@ -44,6 +44,35 @@ namespace TerminalEmulator
                         }
                     }
                     break;
+                case "cat":
+                    {
+                        var arg1 = seg.Next.content;
+                        var p = Path.Combine(__cd , arg1);
+                        if (File.Exists(p))
+                        {
+                            FileInfo fi = new FileInfo(p);
+                            using var fs = fi.OpenRead();
+                            using var sr = new StreamReader(fs);
+                            Write(sr.ReadToEnd());
+                        }
+                        else
+                        {
+                            if (File.Exists(arg1))
+                            {
+                                FileInfo fi = new FileInfo(arg1);
+                                using var fs = fi.OpenRead();
+                                using var sr = new StreamReader(fs);
+                                Write(sr.ReadToEnd());
+
+                            }
+                            else
+                            {
+                                WriteLine("Error: No such a file!");
+                            }
+
+                        }
+                    }
+                    break;
                 case "echo":
                     {
                         WriteLine(seg.Next.content);

@@ -10,10 +10,10 @@ namespace CharacterMapGen
         public int FontSize = 1;
         public int W = 16;
         public int H = 16;
-        public int AA =0 ;
+        public int AA = 0;
         public int TextureW = 320;
         public int TextureH = 320;
-        public string output = "a.png";
+        public string? output = null;
         public int Character = 0;
         public bool ShowHelp;
         public static Options FromArguments(string [ ] args)
@@ -154,6 +154,16 @@ namespace CharacterMapGen
                             }
                         }
                         break;
+                    case "-CC":
+                    case "--convert-character":
+                        {
+                            i++;
+                            item = args [ i ];
+                            {
+                                options.Character = (int)item [ 0 ];
+                            }
+                        }
+                        break;
                     default:
                         {
                             Console.WriteLine($"\x1b[31mError\x1b[39m: Unidentified arguments {item}.");
@@ -192,9 +202,12 @@ namespace CharacterMapGen
             Console.WriteLine("-FS <int>\tFont Size.");
             Console.WriteLine("--character <int>");
             Console.WriteLine("-C <int>\tCharacter that will present in the map.");
+            Console.WriteLine("--convert-character <int>");
+            Console.WriteLine("-CC <char>\tCharacter that will present in the map.");
             Console.WriteLine("--output <string>");
             Console.WriteLine("-O <string>\tOutput file.");
         }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability" , "CA1416:Validate platform compatibility" , Justification = "<Pending>")]
         static void Main(string [ ] args)
         {
             var opt = Options.FromArguments(args);
@@ -209,11 +222,12 @@ namespace CharacterMapGen
                 var graphics = Graphics.FromImage(image);
                 int Block = opt.W * opt.H;
                 int StartPoint = (opt.Character / Block) * Block;
+                int __SP = StartPoint;
                 graphics.TextRenderingHint = (System.Drawing.Text.TextRenderingHint)opt.AA;
                 float cW = (float)opt.TextureW / (float)opt.W;
                 float cH = (float)opt.TextureH / (float)opt.H;
                 graphics.FillRectangle(new SolidBrush(Color.Black) , new Rectangle(-1 , -1 , opt.TextureW + 2 , opt.TextureH + 2));
-                var font = new Font(opt.Font , opt.FontSize , FontStyle.Regular);
+                var font = new Font(opt.Font??"Arial" , opt.FontSize , FontStyle.Regular);
                 var WhiteBrush = new SolidBrush(Color.White);
                 var sf = new StringFormat
                 {
@@ -234,7 +248,7 @@ namespace CharacterMapGen
                     }
                 }
                 graphics.Save();
-                image.Save(opt.output);
+                image.Save(opt.output??$"c_{__SP}.png");
             }
         }
     }

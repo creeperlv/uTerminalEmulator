@@ -36,7 +36,7 @@ namespace TerminalEmulator
         public Texture2D TEBuffer;
         [Header("Helper of applying the texture")]
         public List<TextureApplier> textureApplier;
-        public int BufferUpdatePerFrame=10;
+        public int BufferUpdatePerFrame = 10;
         public int FG;
         public int DefaultFG;
         public float Blink;
@@ -50,7 +50,7 @@ namespace TerminalEmulator
         public KVDict<int , Color> BGColorPlatte;
         public TEApp PreattachedApp;
         public bool PauseKeyboardInput = true;
-        public bool PauseCursorUpdate=true;
+        public bool PauseCursorUpdate = true;
         Sprite SBuffer;
         Queue<string> Commits = new Queue<string>();
         // Start is called before the first frame update
@@ -242,7 +242,7 @@ namespace TerminalEmulator
                         Redraw(x , Height - 1);
                     }
                     LastCP.y -= 1;
-                    if(LastCP.y < 0 )LastCP.y = 0;
+                    if (LastCP.y < 0) LastCP.y = 0;
                     CurrentPosition.y -= 1;
                 }
             }
@@ -300,6 +300,31 @@ namespace TerminalEmulator
                     {
                         switch (c)
                         {
+                            case 'n':
+                                {
+                                    if (int.TryParse(ANSICtrlSeq , out int n))
+                                    {
+                                        if (n == 6)
+                                        {
+                                            host.OnObtainChar('\x1b');
+                                            host.OnObtainChar('[');
+                                            var x_str = CurrentPosition.x.ToString();
+                                            var y_str = CurrentPosition.y.ToString();
+                                            foreach (var str_c in x_str)
+                                            {
+                                                host.OnObtainChar(str_c);
+                                            }
+                                            host.OnObtainChar(';');
+                                            foreach (var str_c in y_str)
+                                            {
+                                                host.OnObtainChar(str_c);
+                                            }
+                                            host.OnObtainChar('R');
+                                        }
+                                    }
+                                    ANSISequence = false;
+                                }
+                                break;
                             case 'm':
                                 {
                                     var controls =
@@ -465,8 +490,21 @@ namespace TerminalEmulator
                                 break;
                             case 'H':
                             case 'h':
+                            case 'f':
                                 {
-                                    CurrentPosition = Vector2Int.zero;
+                                    if (ANSICtrlSeq.IndexOf(';') > 0)
+                                    {
+                                        var xy = ANSICtrlSeq.Split(";");
+                                        if (xy.Length >= 2)
+                                        {
+                                            if (int.TryParse(xy [ 0 ] , out var __x))
+                                                CurrentPosition.x = __x;
+                                            if (int.TryParse(xy [ 1 ] , out var __y))
+                                                CurrentPosition.y = __y;
+                                        }
+                                    }
+                                    else
+                                        CurrentPosition = Vector2Int.zero;
                                     ANSISequence = false;
                                 }
                                 break;
@@ -651,13 +689,13 @@ namespace TerminalEmulator
         {
             if (!PauseCursorUpdate)
             {
-            BlinkD += Time.deltaTime;
-            if (BlinkD > Blink)
-            {
-                ShowCursor = !ShowCursor;
-                BlinkD = 0;
-            }
-            DrawCursor();
+                BlinkD += Time.deltaTime;
+                if (BlinkD > Blink)
+                {
+                    ShowCursor = !ShowCursor;
+                    BlinkD = 0;
+                }
+                DrawCursor();
 
             }
             if (PauseKeyboardInput) return;

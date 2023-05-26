@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
-		<Version>$(VersionPrefix)0.2.3.0</Version>
+		<Version>$(VersionPrefix)0.3.4.0</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Authors>Creeper Lv</Authors>
 		<PackageProjectUrl>https://github.com/creeperlv/uTerminalEmulator</PackageProjectUrl>
@@ -10,19 +10,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\..\..\LICENSE">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LibCLCC.NET" Version="1.7.8" />
+		<PackageReference Include="LibCLCC.NET" Version="1.11.12" />
 		<PackageReference Include="Unity3D" Version="2.1.2" />
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	  <Exec Command="copy &quot;$(OutDir)$(TargetFileName)&quot; &quot;$(SolutionDir)..\..\Unity3D\TerminalEmulator\Assets\Plug-in\$(TargetFileName)&quot;" />
+		<Exec Command="copy &quot;$(OutDir)$(TargetFileName)&quot; &quot;$(SolutionDir)..\..\Unity3D\TerminalEmulator\Assets\Plug-in\$(TargetFileName)&quot;" />
 	</Target>
 
 </Project>

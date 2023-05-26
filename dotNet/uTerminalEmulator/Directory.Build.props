@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup>
-		<UnityVersion>2022.2.13f1</UnityVersion>
+		<UnityVersion>2022.2.21f1</UnityVersion>
 		<UnityProjectPath>$(MSBuildProjectDirectory)\..\..\Unity3D\TerminalEmulator</UnityProjectPath>
 	</PropertyGroup>
 </Project>

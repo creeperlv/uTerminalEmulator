@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Dithering: 0
   m_ClearDepth: 1
   m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
   m_UseScreenCoordOverride: 0
   m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
@@ -739,6 +740,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -897,7 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 522402782, guid: 9764a721c88256e48ba27e35504ac358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Width: 85
+  Width: 90
   Height: 26
   CW: 10
   CH: 20
@@ -911,6 +913,8 @@ MonoBehaviour:
     Data:
     - Key: 0
       Value: {fileID: 2800000, guid: 2fd0562b262296e43a1c2379b16208de, type: 3}
+    - Key: 256
+      Value: {fileID: 2800000, guid: 3bbae90595419974b8c1535191e8faec, type: 3}
   TEBuffer: {fileID: 0}
   textureApplier:
   - {fileID: 1227005501}
