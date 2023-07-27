@@ -27,7 +27,7 @@ Implemented:
 |Functions|Description|
 | -- | --|
 | ESC[0m| Reset FG and BG|
-| ESC[3#m, ESC[9#m| Set FG|
-| ESC[4#m, ESC|10#m | Set BG|
+| ESC[3#m, ESC[9#m | Set FG|
+| ESC[4#m, ESC[10#m | Set BG|
 | ESC[#J| Only ESC[J is tested|
 | ESC[A,B,C,D | Implemented for both input and output|
